@@ -1,0 +1,20 @@
+# List of tree names
+tree_names = ["Mango tree", "Coconut tree", "Papaya tree", "Apple tree", "Banana tree", "Blackberry tree"]
+
+# 1. Print the third tree name in the list
+third_tree = tree_names[2]
+print("Third tree name:", third_tree)
+
+# 2. Print the tree names in reverse order
+reverse_tree_names = tree_names[::-1]
+print("Tree names in reverse order:", reverse_tree_names)
+
+# 3. Check if "Cherry tree" is in the list
+if "Cherry tree" in tree_names:
+    print("Cherry tree is in the list")
+else:
+    print("Cherry tree is not in the list")
+
+# 4. Replace "Coconut tree" with "Pine tree"
+tree_names[1] = "Pine tree"
+print("Tree names after replacing 'Coconut tree' with 'Pine tree':", tree_names)
