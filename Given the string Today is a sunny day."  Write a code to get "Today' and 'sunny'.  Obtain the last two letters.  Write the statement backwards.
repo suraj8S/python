@@ -1,0 +1,18 @@
+# Given string
+input_string = "Today is a sunny day."
+
+# Get "Today" and "sunny"
+first_word = input_string.split()[0]
+second_word = input_string.split()[3]
+
+# Obtain the last two letters
+last_two_letters = input_string[-2:]
+
+# Write the statement backwards
+reversed_statement = input_string[::-1]
+
+# Output the results
+print(f"First word: {first_word}")
+print(f"Second word: {second_word}")
+print(f"Last two letters: {last_two_letters}")
+print(f"Reversed statement: {reversed_statement}")
