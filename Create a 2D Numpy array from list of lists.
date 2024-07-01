@@ -1,0 +1,23 @@
+import numpy as np
+
+# Create a 2D NumPy array from list of lists
+list1 = [[110, 102, 183], [140, 175, 106], [170, 195, 117], [192, 140, 195]]
+arr = np.array(list1)
+
+print("Original 2D Array:")
+print(arr)
+
+# Find minimum value along each row
+min_along_rows = np.min(arr, axis=1)
+print("\nMinimum value along each row:")
+print(min_along_rows)
+
+# Replace odd numbers with -2
+arr[arr % 2 != 0] = -2
+print("\nArray with odd numbers replaced with -2:")
+print(arr)
+
+# Swap row 1 and row 2 (indexing starts from 0)
+arr[[1, 2]] = arr[[2, 1]]
+print("\nArray after swapping row 1 and row 2:")
+print(arr)
