@@ -1,0 +1,27 @@
+import pandas as pd
+import numpy as np
+
+# Create a Pandas Series
+data = pd.Series([4, 7, -5, 3, np.nan], index=['d', 'b', 'a', 'c', 'e'])
+
+# Minimum value
+min_value = data.min()
+
+# Maximum value
+max_value = data.max()
+
+# Values sorted in ascending order
+sorted_values_asc = data.sort_values()
+
+# Values sorted in descending order
+sorted_values_desc = data.sort_values(ascending=False)
+
+# Output the results
+print("Original Series:")
+print(data)
+print("\nMinimum value:", min_value)
+print("Maximum value:", max_value)
+print("Values sorted in ascending order:")
+print(sorted_values_asc)
+print("Values sorted in descending order:")
+print(sorted_values_desc)
