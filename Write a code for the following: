@@ -1,0 +1,41 @@
+# Function to check if a number is even or odd
+def check_even_odd(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Function to check if a number is divisible by 9 and a multiple of 6
+def check_divisible_by_9_and_multiple_of_6(num):
+    if num % 9 == 0 and num % 6 == 0:
+        return True
+    else:
+        return False
+
+# Retrieve the third element in the given list
+def get_third_element(num_list):
+    if len(num_list) >= 3:
+        return num_list[2]  # Index 2 corresponds to the third element (indexing starts from 0)
+    else:
+        return None  # Return None if the list has less than 3 elements
+
+# Main program
+if __name__ == "__main__":
+    # Take input from user for first task
+    num_input = int(input("Enter a number to check if it's even or odd: "))
+    print(f"{num_input} is {check_even_odd(num_input)}")
+
+    # Take input from user for second task
+    num_input_2 = int(input("Enter a number to check if it's divisible by 9 and a multiple of 6: "))
+    if check_divisible_by_9_and_multiple_of_6(num_input_2):
+        print(f"{num_input_2} is divisible by 9 and a multiple of 6.")
+    else:
+        print(f"{num_input_2} is not divisible by 9 and a multiple of 6.")
+
+    # Third task (retrieve third element from list)
+    num_list = [5, 3, 6, 1, 85, 23, 5, 13]
+    third_element = get_third_element(num_list)
+    if third_element is not None:
+        print(f"The third element in the list {num_list} is: {third_element}")
+    else:
+        print("The list does not have a third element.")
